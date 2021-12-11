@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/NamazVakti" version="5.0.1" viewmodes="maximized">
+    <access origin="https://ezanvakti.herokuapp.com" subdomains="true"></access>
+    <tizen:app-widget id="VeR0jngr0t.NamazVakti.Widget" primary="true">
+        <tizen:widget-label xml:lang="en-gb">Prayer Time</tizen:widget-label>
+        <tizen:widget-label xml:lang="en">Prayer Time</tizen:widget-label>
+        <tizen:widget-label xml:lang="tr-tr">Namaz Vakti</tizen:widget-label>
+        <tizen:widget-label>Prayer Time</tizen:widget-label>
+        <tizen:widget-content src="widget/NamazVakti/index.html">
+            <tizen:widget-size preview="widget/NamazVakti/preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="VeR0jngr0t.NamazVakti" package="VeR0jngr0t" required_version="2.3.2"/>
+    <author email="faith.software@gmail.com">Faith Software</author>
+    <content src="index.html"/>
+    <description xml:lang="en-gb">Track prayer times for all over the world, for muslims.</description>
+    <description xml:lang="en">Track prayer times for all over the world, for muslims.</description>
+    <description xml:lang="tr-tr">Tüm dünya ülkeleri ve Türkiye için namaz vakitlerini takip edebilirsiniz.</description>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name xml:lang="en-gb">Prayer Time</name>
+    <name xml:lang="en">Prayer Time</name>
+    <name xml:lang="tr-tr">Namaz Vakti</name>
+    <name>Prayer Time</name>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>

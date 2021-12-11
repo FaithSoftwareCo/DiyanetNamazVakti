@@ -1,0 +1,133 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    background-image: url('../compass_cover_w.png');
+    background-size: 100%;
+}
+
+.titleDiv {
+	padding-top: 25px;
+	display: inline-block;
+	line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #38e000;
+}
+.headerDiv {
+    border: 1px solid #bcb7a6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-color: #ded8c4;
+    font-weight: bold;
+    color: #af4a49;
+    text-align: center;
+}
+.rowDiv {
+    background-color: #e1e1e1;
+    text-align: center;
+}
+.leftDiv {
+    text-align: center;
+    border: 1px solid #bcb7a6;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: #9b9689;
+}
+.rightDiv {
+    text-align: center;
+    border: 1px solid #bcb7a6;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+.rightDiv-selected {
+    text-align: center;
+    border: 1px solid #bcb7a6;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    color: white;
+    background-color: #3b73b6;
+    box-shadow: -1px -1px 1px #35669f inset, 1px 1px 1px #8cadd4 inset;
+    font-weight: bold;
+    font-size: 25px;
+}
+#errorScreen
+{
+	text-align: center;
+	font-size: 26px;
+}
+
+.titleDiv2 {
+	padding-top: 30px;
+	display: inline-block;
+	line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #38e000;
+}
+
+#nextPrayerLabel {
+    border: 1px solid #bcb7a6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-color: #ded8c4;
+    font-weight: normal;
+    color: #af4a49;
+    text-align: center;
+    font-size: 40px;
+}
+
+#nextPrayerTime
+{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#nextPrayerDuration
+{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#currentTime
+{
+	text-align: center;
+	font-size: 130px;
+	font-weight: bold;
+}
+
+#nextPrayerTime2
+{
+	line-height: 50px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}

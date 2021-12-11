@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=360, user-scalable=no" />
+    <meta name="description" content="Diyanet Namaz Vakti" />
+    <title>Namaz Vakti</title>
+    <link rel="stylesheet" href="./lib/tau/wearable/theme/default/tau.css" />
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="./lib/tau/wearable/theme/default/tau.circle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="language.js"></script>
+    <script src="languagetr.js"></script>
+</head>
+
+<body>
+    <div class="ui-page ui-page-active" id="main">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="title"></span></h2> 
+        </header>
+<!--         <div id="main-content" class="ui-content"> -->
+        <div class="ui-content" id="month-page-table-content">
+        	<table class="month" id="vakitTable" hidden>
+		    <thead>
+		        <tr>
+		            <th class="holiday" id=miladiDate>00 Gregorian 2020</th>
+		            <th id=miladiDay>Day</th>
+		        </tr>
+		    </thead>
+		    <tbody id="month-table">
+		    <tr>
+				<td class="inactive"><div><span data-l10n="Imsak"></span></div></td>
+				<td class="inactive"><div id="imsakTime">00:00</div></td>
+			</tr>
+			<tr>
+				<td class="selected"><div><span data-l10n="Gunes"></span></div></td>
+				<td class="today"><div id="gunesTime">00:01</div></td>
+			</tr>
+			<tr>
+				<td class="inactive"><div><span data-l10n="Ogle"></span></div></td>
+				<td class="inactive"><div id="ogleTime">00:02</div></td>
+			</tr>
+			<tr>
+				<td class="inactive"><div><span data-l10n="Ikindi"></span></div></td>
+				<td class="inactive"><div id="ikindiTime">00:03</div></td>
+			</tr>
+			<tr>
+				<td class="inactive"><div><span data-l10n="Aksam"></span></div></td>
+				<td class="inactive"><div id="aksamTime">00:04</div></td>
+			</tr>
+			<tr>
+				<td class="inactive"><div><span data-l10n="Yatsi"></span></div></td>
+				<td class="inactive"><div id="yatsiTime">00:05</div></td>
+			</tr>
+		    </tbody>
+		    <thead>
+		        <tr>
+		            <th colspan="2" id=hicriDate>00 Hijri 2000</th>
+		        </tr>
+		    </thead>
+		</table>
+		<table class="month" id="selectLocTable" hidden>
+		    <thead>
+		        <tr>
+		            <th> </th>
+		            <th> </th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    <tr>
+				<td class="holiday" colspan="2"><div id="errorScreen"></div></td>
+			</tr>
+	    </table>
+        </div>
+        
+        </div>
+        <a class="popup-handler" id="settings-btn"></a>
+    </div>
+    <div class="ui-page" id="settings">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="settings"></span></h2> 
+        </header>
+        <div class="ui-content">
+            <ul class="ui-listview">
+                <li class="li-has-thumb-left"> <a href="#settings-lang" data-transition="slideup"><span data-l10n="language"></span>
+       <div class="img-icon language-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+                <li class="li-has-thumb-left"> <a href="#settings-location" data-transition="slideup"><span data-l10n="location"></span>
+       <div class="img-icon location-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+                <li class="li-has-thumb-left"> <a href="#settings-notification" data-transition="slideup"><span data-l10n="notifications"></span>
+       <div class="img-icon notification-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+                <li class="li-has-thumb-left"> <a href="#settings-kible" data-transition="slideup"><span data-l10n="kible"></span>
+       <div class="img-icon kible-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+                <li class="li-has-thumb-left"> <a href="#bayramvakitleri"><span data-l10n="bayramlar"></span>
+       <div class="img-icon gear-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+                <li class="li-has-thumb-left"> <a href="#about"><span data-l10n="about"></span>
+       <div class="img-icon gear-info-icon ui-li-thumb-left"></div> </a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-location">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="location"></span></h2> 
+        </header>
+        <div class="ui-content" id="settings-location-content">
+            <ul class="ui-listview" id="settings-location-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-location-ulke">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="ulke"></span></h2> 
+        </header>
+        <div class="ui-content" id="settings-location-content-ulke">
+            <ul class="ui-listview" id="settings-location-ulke-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-location-il">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="il"></span></h2> 
+        </header>
+        <div class="ui-content" id="settings-location-content-il">
+            <ul class="ui-listview" id="settings-location-il-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-location-ilce">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="ilce"></span></h2> 
+        </header>
+        <div class="ui-content" id="settings-location-content-ilce">
+            <ul class="ui-listview" id="settings-location-ilce-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="bayramvakitleri">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="bayramlar"></span></h2> 
+        </header>
+        <div class="ui-content" id="bayram-vakitleri-content">
+            <ul class="ui-listview" id="bayram-vakitleri-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-notification">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="notifications"></span></h2> 
+        </header>
+        <div class="ui-content" id="settings-content-notifications">
+            <ul class="ui-listview" id="settings-notifications-ui"></ul>
+        </div>
+    </div>
+    <div class="ui-page" id="settings-kible">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="kible_time"></span></h2> 
+        </header>
+        <div class="ui-content" id="kible-time">
+            
+        </div>
+    </div>
+    <div class="ui-page" id="settings-lang">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title"><span data-l10n="language"></span></h2> 
+        </header>
+        <div class="ui-content">
+            <ul class="ui-listview">
+                <li class="li-has-radio">
+                    <label>
+                        <span data-l10n="English"></span>
+                        <input type="radio" id="lang-radio-english" name="lang-radio" value="eng"/>
+                    </label>
+                </li>
+                <li class="li-has-radio">
+                    <label>
+                        <span data-l10n="Turkce"></span>
+                        <input type="radio" id="lang-radio-turkish" name="lang-radio" value="tr"/>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ui-page" id="about">
+        <header class="ui-header">
+            <h2 class="ui-title"><span data-l10n="about"></span></h2> 
+        </header>
+        <div class="ui-content">
+            <ul class="ui-listview">
+                <li class="li-has-2line"> <a href="#"> <span data-l10n="version"></span> <span class="li-text-sub ui-li-sub-text">5.1</span> </a> 
+                </li>
+                <li>
+                    <a href="details">
+                        <div class="ui-marquee ui-marquee-gradient">
+                            <span data-l10n="details"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="details" class="ui-popup">
+            <div class="ui-popup-content">
+            	<span data-l10n="detailsExplanation"></span>
+            </div>
+            <div class="ui-popup-footer ui-bottom-button">
+                <a href="#about" class="ui-btn" data-rel="back">OK</a> 
+            </div>
+        </div>
+    </div>
+    <div id="popupPage">
+    	<div id="alert-popup" class="ui-popup">
+            <div class="ui-popup-content">
+                <p id="message"></p>
+            </div>
+            <div class="ui-popup-footer ui-bottom-button">
+                <button class="ui-btn" data-inline="true">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/tau/wearable/js/tau.js"></script>
+
+	<script type="text/javascript" src="./js/ulkeler.js"></script>
+	<script type="text/javascript" src="./js/ulkeler_en.js"></script>
+    <!-- main application file -->
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

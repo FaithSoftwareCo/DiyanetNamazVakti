@@ -1,0 +1,330 @@
+body {
+    width: 100%;
+    -webkit-user-select: none;
+}
+
+.li-text-sub {
+    color: dimgray;
+    font-size: small;
+}
+
+.popup-handler {
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    color: transparent;
+    background-color: #a4a4a4;
+    transform: translate(0, -50%);
+    -webkit-mask-image: url(../images/b_more_option.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 46px 20px;
+}
+
+.delete-icon:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: url(../images/delete_icon.png);
+    -webkit-mask-size: 100% 100%;
+    background-color: rgb(8, 8, 8);
+    -webkit-mask-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-start.hidden, #btn-stop.hidden {
+    display: none;
+}
+
+#alert-popup .ui-popup-content {
+    text-align: center;
+    background-color: transparent;
+}
+
+#alert-popup .ui-popup-footer {
+    margin-top: -6rem;
+}
+
+header.ui-header {
+    height: auto;
+}
+
+.ui-btn:enabled:active:hover {
+    background-color: transparent;
+}
+
+
+.ui-li-thumb-left {
+    border-radius: 50%;
+}
+
+.ui-listview li.li-has-thumb-left .img-icon {
+    left: 30px;
+}
+
+.ui-listview li .img-icon {
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.ui-listview li .img-icon:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-size: 100% 100%;
+    background-color: rgb(0, 0, 0);
+    -webkit-mask-repeat: no-repeat;
+}
+
+.ui-listview li.li-has-radio {
+    font-size:  60%;
+}
+
+.ui-listview li.li-has-radio-alarm {
+    font-size:  60%;
+    border: 2px;
+    width: 2em;
+    height: 2em;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+}
+
+.gear-info-icon:before {
+    -webkit-mask-image: url(../images/b_settings_list_gear_info.png);
+}
+
+.location-info-icon:before {
+    -webkit-mask-image: url(../images/b_settings_list_input.png);
+}
+
+.language-info-icon:before {
+    -webkit-mask-image: url(../images/b_settings_language.png);
+}
+
+.notification-info-icon:before {
+    -webkit-mask-image: url(../images/notification.png);
+}
+
+.kible-info-icon:before {
+    -webkit-mask-image: url(../images/kible.png);
+}
+
+.outeralarm
+{
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.inneralarm
+{
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+label.checkbox-label input[type=checkbox]{
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;
+}
+
+.alarmSetBtn {
+    width:30px
+} 
+
+/****/
+
+/***/
+
+/* ----------------------------
+    Month page
+-----------------------------*/
+
+#main {
+    -webkit-user-select: none;
+    overflow: hidden;
+    background-image: url('../images/compass_cover_w.png');
+    background-size: 100%;
+}
+
+#main header.ui-header {
+    height: 20%;
+}
+
+#main table.month {
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+    color: #393939;
+    background-color: #efece0;
+    border-collapse: collapse;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#main table.month thead {
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #ded8c4;
+    line-height: 26px;
+}
+
+#main table.month thead tr {
+    border: 1px solid #bcb7a6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-color: #ded8c4;
+}
+
+#main table.month thead th.holiday {
+    color: #af4a49;
+}
+
+#main table.month td {
+	width: 50%;
+    /*padding-right: 5px;*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #bcb7a6;
+}
+
+#main table.month td:first-child {
+    color: #ab3c3c;
+}
+
+#main table.month td.inactive {
+    color: #9b9689;
+    /*color: #393939;*/
+    font-weight: bold;
+}
+
+#main table.month td div {
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+}
+
+#main table.month td.today div {
+    background-color: #e1e1e1;
+    box-shadow: -2px -2px 2px #c9c8c4 inset, 2px 2px 2px #eeeeee inset;
+    font-weight: bold;
+}
+
+#main table.month td.selected div {
+    color: white;
+    background-color: #3b73b6;
+    box-shadow: -1px -1px 1px #35669f inset, 1px 1px 1px #8cadd4 inset;
+    font-weight: bold;
+}
+
+#prev-month-btn, #next-month-btn {
+    width: 33%;
+}
+
+#current-month-btn {
+    width: 34%;
+}
+
+.ui-fixed-hidden {
+    position: fixed;
+}
+
+#main ui-content {
+     background: #efece0;
+}
+
+.ui-footer > button {
+    height: inherit;
+}
+
+#month-table tr {
+    line-height: 2.5rem;
+    font-size: 2.2rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#month-footer {
+    position: fixed;
+}
+
+@media (-tizen-geometric-shape: circle) {
+
+    .ui-page.ui-scroll-on .ui-content {
+        margin-bottom: 0;
+    }
+
+    .ui-footer.ui-grid-col-3 .ui-btn {
+        background-repeat: no-repeat;
+        background-size: 35%;
+        color: transparent;
+        padding: 0;
+        height: 100%;
+    }
+
+    .ui-page.ui-scroll-on .ui-content~.ui-footer:not(.ui-expandable-footer) {
+        margin-top: 0;
+        height: 96px;
+    }
+
+    .ui-footer.ui-grid-col-3 .ui-btn:nth-child(1) {
+        background-position: 90% center;
+    }
+
+    .ui-footer.ui-grid-col-3 .ui-btn:nth-child(2) {
+        background-position: 50% center;
+    }
+
+    .ui-footer.ui-grid-col-3 .ui-btn:nth-child(3) {
+        background-position: 10% center;
+    }
+
+    #main table.month {
+        height: auto;
+    }
+
+    #main table.month thead {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #month-table tr {
+        line-height: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    #main table.month td {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
