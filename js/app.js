@@ -28,14 +28,8 @@
 (function mainWrapper() {
     'use strict';
 
-
-    /**
-     * Indicates whether the message port is during start-up.
-     *
-     * @memberof app
-     * @private
-     * @type {boolean}
-     */
+    var version = "5.2";
+    
     var isStarting = false,
 
         currentLanguage = "en",
@@ -126,6 +120,16 @@
         }
     }
     
+    function setSpan(spanId, textArg)
+    {
+    	var span = document.getElementById(spanId);
+        
+        while( span.firstChild ) {
+            span.removeChild( span.firstChild );
+        }
+        span.appendChild( document.createTextNode(textArg) );
+    }
+    
     function initVars()
     {
     	if (tizen.preference.exists('alarmHeader')) {
@@ -173,6 +177,8 @@
     	if (tizen.preference.exists('currentLanguage')) {
     		currentLanguage = tizen.preference.getValue('currentLanguage');
         }
+    	
+    	setSpan('versionSpanId', version);
     }
 
     function showNum(n) {
@@ -701,6 +707,10 @@
         }
 
         console.log('vakitler array length:' + vakitler.length);
+        if(vakitler.length > 0)
+    	{
+        	setSpan('lastDataSpanId', vakitler[vakitler.length-1].MiladiTarihKisaIso8601);
+    	}
         return vakitler;
     }
 
@@ -1611,7 +1621,7 @@
                 {
                     tau.changePage('settings');
                 } 
-                else if (pageid === 'settings' || pageid === 'about') 
+                else if (pageid === 'settings') 
                 {
                     tau.changePage('main');
                 } else

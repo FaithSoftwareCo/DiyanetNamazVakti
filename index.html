@@ -95,7 +95,7 @@
        <div class="img-icon kible-info-icon ui-li-thumb-left"></div> </a> 
                 </li>
                 <li class="li-has-thumb-left"> <a href="#bayramvakitleri"><span data-l10n="bayramlar"></span>
-       <div class="img-icon gear-info-icon ui-li-thumb-left"></div> </a> 
+       <div class="img-icon bayram-info-icon ui-li-thumb-left"></div> </a> 
                 </li>
                 <li class="li-has-thumb-left"> <a href="#about"><span data-l10n="about"></span>
        <div class="img-icon gear-info-icon ui-li-thumb-left"></div> </a> 
@@ -186,13 +186,20 @@
         </header>
         <div class="ui-content">
             <ul class="ui-listview">
-                <li class="li-has-2line"> <a href="#"> <span data-l10n="version"></span> <span class="li-text-sub ui-li-sub-text">5.1</span> </a> 
+                <li class="li-has-2line"> <a href="#"> 
+	                <span data-l10n="version"></span> 
+	                <span id="versionSpanId" class="li-text-sub ui-li-sub-text">x.y</span> </a> 
                 </li>
-                <li>
+                <li class="li-has-2line">
+                    <a href="#">
+                       <span data-l10n=lastData></span> 
+                		<span id="lastDataSpanId" class="li-text-sub ui-li-sub-text">xx.yy.zzzz</span>
+                    </a>
+                </li>
+                <li class="li-has-2line">
                     <a href="details">
-                        <div class="ui-marquee ui-marquee-gradient">
-                            <span data-l10n="details"></span>
-                        </div>
+                       <span data-l10n="details"></span>
+                       <span class="li-text-sub ui-li-sub-text">...</span> 
                     </a>
                 </li>
             </ul>

@@ -16,6 +16,7 @@ TIZEN_L10N=
 	"settings" : "Settings",
 	"bayramlar" : "Feasts",
 	"version" : "Version",
+	"lastData" : "Last Data",
 	"details" : "Details",
 	"detailsExplanation" : "*.Location selection begins with Country selection. <br>1.Data is retreived from Turkish Diyanet Foundation. <br>2.Data is retrieved for a month. <br>3.After that there is no need for internet connection for a month. <br>4.Icons made by Freepik from https://www.flaticon.com/. <br>5.Very thanks to Furkan Tektaş for Diyanet Pray Times api",
 	"vakitler_alinamadi" : "Could not get data. Try again!",

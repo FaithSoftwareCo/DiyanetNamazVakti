@@ -136,6 +136,10 @@ input[type=checkbox] {
     -webkit-mask-image: url(../images/kible.png);
 }
 
+.bayram-info-icon:before {
+    -webkit-mask-image: url(../images/celebrity.png);
+}
+
 .outeralarm
 {
     width:100%;

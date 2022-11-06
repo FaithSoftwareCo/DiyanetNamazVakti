@@ -16,6 +16,7 @@ TIZEN_L10N_TR=
 	"settings" : "Ayarlar",
 	"bayramlar" : "&nbsp;Bayramlar",
 	"version" : "Sürüm",
+	"lastData" : "Son Veri",
 	"details" : "Detaylar",
 	"detailsExplanation" : "*.Yer Seçiminde Ülke alanına basarak seçim yapabilirsiniz. <br>1.Veriler Diyanet'in sitesinden alınmaktadır. <br>2.Bir aylık veriler bir kerede alınır. <br>3.Veriler alındıktan sonra bir ay boyunca internete bağlanmadan saklananır ve bu veriler kullanılır. <br>4.Icons made by Freepik from https://www.flaticon.com/ <br>5.Diyanet Namaz Vakitleri api sini sağlayan Furkan Tektaş'a çok teşekkürler",
 	"vakitler_alinamadi" : "Vakitler alinamadi. Tekrar Deneyin!",
