@@ -14,8 +14,8 @@ IYiE+G6Q6A==</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>qeoqNPzPGbp52VNjMGnDw9QG6WMZJ/wIA7JxeYWK3NLiXNabKWYG6D4TPBqpPRdcxHrpyGXAjnQ8
-SXB+EwUFpA==</DigestValue>
+<DigestValue>sCvTuTil6us/9ocLSfndDvIN8opWnAr2v2/+Y6oT3ZHEFeQhWsWnPGg8sclzcg4cZqWYifxzHGWA
+iDLI/Rgu8Q==</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -74,8 +74,8 @@ bCm6+NXVGg==</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>Qsw/929TNNMXz0hAtJgXHBNUsixVoTxGNr2xHcKzVKXK9PuiU5zxEwbGdj3FOqlQBgvTeMZ19Tr5
-fR2VK/n/1g==</DigestValue>
+<DigestValue>vtXDP0bM7m1elnqLNxPTATLHv87T/Bky+mXVXkMMKTODQeWHJ0i7MGERFTj0z6QQDnqb0M5H2TmW
+8TVTqtaeeA==</DigestValue>
 </Reference>
 <Reference URI="js%2Fulkeler.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -89,13 +89,13 @@ KhnIMQVq/A==</DigestValue>
 </Reference>
 <Reference URI="language.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>Xagh+4A0B5i6WNZcoHU6yPuH4i7p5uA2r+lTMs58O/u95BerwrsS5JfxPfhWa/eySEf13EogiRwL
-r3mwrGbcrA==</DigestValue>
+<DigestValue>4Xp6XUu4Vs7hxZOCM1tduiwSOFxUIh2XkBt0rruPHMshYwx/qUYeyaz5QvercosCm8ToZkyx8wkN
+0HS1Gb4FNQ==</DigestValue>
 </Reference>
 <Reference URI="languagetr.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>WppCQySM0j4OAeZ8+P0lcr+1XyApZoBKTOEhFGhvgXpZlVRDjnqGzrtWRZrdDueeTKTHzd8SskLA
-27fQ3cIM5w==</DigestValue>
+<DigestValue>9ziYiEXn4gn8IGni/Q2wxTz/hqD/dRFFNWl+FPV90INnII1kOU0GyVLHur1j7JagQaE6VAGFRxNk
+1coTlskr2w==</DigestValue>
 </Reference>
 <Reference URI="lib%2Ftau%2FLICENSE.Flora">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -1837,6 +1837,11 @@ k6jFD5Yvqg==</DigestValue>
 <DigestValue>z1OJv1v5ku/xRElMz6s6X/pRZWM9wrSNkANuEMQI9MGe7ouyjNCpeJEudRkLPJN6/Gslpdx8X0NB
 jkoJkoLf9g==</DigestValue>
 </Reference>
+<Reference URI="ssh%20-%20key.txt">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Zg+2jWx05WYj+Uh7aW4DG7PTG2+l+iWT32gBZINtDJTtJ9ib9GQsqra/LqrDfJ7e/EAHZl/Ifbn9
++maeQBxpNw==</DigestValue>
+</Reference>
 <Reference URI="widget%2FNamazVakti%2Fcompass_cover_w.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>L1IMw4N+tK7QwUicOvsJ7LHlx3wixUCsWq7FpOUWsHEh0Sk3NPGtlzuZdXpgAyO6RKWr8fqdhTKP
@@ -1882,11 +1887,11 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-P1GskKz1M6Y02dPcyvffeleu1OvhPFiZQQthjogedEHNiLmiv8Gc7HxBrddAXdkkaEIhddvpxdd7
-jMiAnP9ZnFpS3Tt7eO8pBhGGOpYnY5wtAgEfn9VbDOKpROu4+zMB217C0N4+DIS/UI4/Zts3o41A
-o1PCk/MMHtQZ6CY8Bo+xaK8vUMcmcBSBRRx7C8WsF2ESrbwYGfNSMVJ9saXFyS4XglElqyZ/HsbS
-917b34Qp0eIsvQsyE6iroYaXOfd2XNN8ATllCEXWV76/fRgDQHSqsQS6AjTNMYoz2aNY4Utynkrf
-0eRhr17gyZDwjqEA/LYACI4PlADPE4AIJbHwEw==
+mKC9orQXce6ggMZSnJ6DSl5GiNVrswIPF8jdNsEMgy8UJPhNKnsxV8PKZhlqQTXeW7U+J8bIvZQy
+fTj5raSAlfquQF+LHmrMYml5TuunREUKmvBHcGV3rdiwmUgCGM8FgjcFens0AU0dsomABANCXQ7P
+IJWi3N5iPrJUEiaGI3rf8G374KuZBLH0nm3MNaPyhkDzG9+3hA8N2RBuPFUAzTQNOFlINxsIu2eO
+6Z/05mQ8L3kxtWRnIglFj0QQWZaDnSL/E+5N7MI1MmiOb8l8zNvSY05y8NHud5CZGWvrBG3pdsyE
+1277+ahs0vSyubPYLfOuYHS9tB8JkVXJuJqohw==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

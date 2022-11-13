@@ -44,5 +44,7 @@ TIZEN_L10N_TR=
 	"minutes" : "dakika",
 	"language" : "Dil",
 	"Turkce" : "Türkçe",
-	"English" : "English"
+	"English" : "English",
+	"try_again" : "Veri tabanına ulaşılamıyor, sonra tekrar deneyiniz!",
+	"check_internet" : "Internet baglantınızı kontrol ediniz!",
 };

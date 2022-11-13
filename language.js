@@ -44,5 +44,7 @@ TIZEN_L10N=
 	"minutes" : "minute(s)",
 	"language" : "Language",
 	"Turkce" : "Türkçe",
-	"English" : "English"
+	"English" : "English",
+	"try_again" : "Try again later, server is down for a moment!",
+	"check_internet" : "Check your internet connection!",
 };
