@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/NamazVakti" version="5.0.2" viewmodes="maximized">
-    <access origin="https://ezanvakti.herokuapp.com" subdomains="true"></access>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/NamazVakti" version="6.0.0" viewmodes="maximized">
+    <access origin="https://ezanvakti.emushaf.net" subdomains="true"></access>
     <tizen:app-widget id="VeR0jngr0t.NamazVakti.Widget" primary="true">
         <tizen:widget-label xml:lang="en-gb">Prayer Time</tizen:widget-label>
         <tizen:widget-label xml:lang="en">Prayer Time</tizen:widget-label>

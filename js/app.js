@@ -227,7 +227,7 @@
             console.log("onerror: " + xmlhttp.statusText);
         };
 
-        xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/ulkeler");
+        xmlhttp.open("GET", "https://ezanvakti.emushaf.net/ulkeler");
 
         xmlhttp.send();*/
 	}
@@ -278,8 +278,8 @@
 			return;
 		};
 
-		//xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/bayram?ilce=" + ilceId);
-		xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/bayram-namazi/" + ilId);
+		//xmlhttp.open("GET", "https://ezanvakti.emushaf.net/bayram?ilce=" + ilceId);
+		xmlhttp.open("GET", "https://ezanvakti.emushaf.net/bayram-namazi/" + ilId);
 
 		xmlhttp.send();
 	}
@@ -327,7 +327,7 @@
 				}
 			} else {
 				//alert(xmlhttp.responseText.count);
-				console.log(' State2:' + xmlhttp.readyState);
+				console.log(' State in iller:' + xmlhttp.readyState);
 			}
 		};
 		xmlhttp.onerror = function(e) {
@@ -337,7 +337,7 @@
 			return;
 		};
 
-		xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/sehirler?ulke=" + ulkeId);
+		xmlhttp.open("GET", "https://ezanvakti.emushaf.net/sehirler?ulke=" + ulkeId);
 
 		xmlhttp.send();
 	}
@@ -395,7 +395,7 @@
 			return;
 		};
 
-		xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/ilceler?sehir=" + sehirId);
+		xmlhttp.open("GET", "https://ezanvakti.emushaf.net/ilceler?sehir=" + sehirId);
 
 		xmlhttp.send();
 	}
@@ -449,7 +449,7 @@
 			return;
 		};
 
-		xmlhttp.open("GET", "https://ezanvakti.herokuapp.com/vakitler?ilce=" + ilceId);
+		xmlhttp.open("GET", "https://ezanvakti.emushaf.net/vakitler?ilce=" + ilceId);
 
 		xmlhttp.send();
 	}
